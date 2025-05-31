@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>ورود / ثبت‌نام | رزمُدا</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f5f0fa;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      position: relative;
+    }
+    .home-link {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: #6b4f9c;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .home-link:hover {
+      text-decoration: underline;
+    }
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 90%;
+      max-width: 800px;
+      margin-top: 60px;
+    }
+    .box {
+      width: 300px;
+    }
+    h2 {
+      color: #6b4f9c;
+      text-align: center;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      width: 100%;
+      background-color: #6b4f9c;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #5a4186;
+    }
+    @media (max-width: 700px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="rozmoda.html" class="home-link">← بازگشت به خانه</a>
+
+  <div class="container">
+    <!-- فرم ورود -->
+    <div class="box">
+      <h2>ورود</h2>
+      <form action="#" method="post">
+        <input type="text" name="username" placeholder="نام کاربری یا ایمیل" required>
+        <input type="password" name="password" placeholder="رمز عبور" required>
+        <button type="submit">ورود</button>
+      </form>
+    </div>
+
+    <!-- فرم ثبت‌نام -->
+    <div class="box">
+      <h2>ثبت‌نام</h2>
+      <form action="#" method="post">
+        <input type="text" name="fullname" placeholder="نام کامل" required>
+        <input type="email" name="email" placeholder="ایمیل" required>
+        <input type="password" name="password" placeholder="رمز عبور" required>
+        <button type="submit">ثبت‌نام</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
